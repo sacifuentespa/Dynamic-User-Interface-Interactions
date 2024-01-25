@@ -38,7 +38,6 @@ footerLink.appendChild(githubImage)
 
 const menu = document.querySelector(".menu")
 
-galleryScript()
 
 burguerButton.addEventListener('click',()=>{
     if(menu.classList.contains('visible')){
@@ -49,5 +48,4 @@ burguerButton.addEventListener('click',()=>{
     }
 })
 
-
-
+galleryButton.addEventListener('click',()=>galleryScript())

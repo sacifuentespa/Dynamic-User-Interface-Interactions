@@ -9,6 +9,7 @@ import pic8 from './public/images/galleryImages/pic8.jpg';
 import arrow from './public/images/icons/arrow.svg';
 
 function showGallery() {
+    if(document.querySelector('.main').children.length === 0){
     const galleryPictures = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
 
     const main = document.querySelector('.main');
@@ -53,6 +54,8 @@ function showGallery() {
         }
         selectedPicture.src = galleryPictures[picSelector];
     })
+}
+return false
 }
 
 export default showGallery
