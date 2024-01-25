@@ -1,5 +1,5 @@
 /*general styles*/
-*{
+* {
     --topColor: #222831;
     --menusColor: #393E46;
     --mainColor: #00ADB5;
@@ -7,80 +7,99 @@
 
 }
 
-body, html{
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
 }
 
 /*header and menu styles*/
-header{
+header {
     background-color: var(--topColor);
     padding: 10px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header button{
+header button {
     background-color: var(--topColor);
     border: 0;
 }
 
 
-button img:hover{
+button img:hover {
     filter: invert(100%) sepia(16%) saturate(7495%) hue-rotate(219deg) brightness(118%) contrast(116%);
 }
 
-.menu button{
+.menu button {
     background-color: var(--menusColor);
     border: 0;
 }
 
 
-.menu button:hover{
-    color:white;
+.menu button:hover {
+    color: white;
 }
 
 img {
     width: 50px;
 }
 
-.menu{
+.menu {
     background-color: var(--menusColor);
     padding: 10px;
-    display:none;
+    display: none;
 }
 
-.visible{
+.visible {
     background-color: var(--menusColor);
     padding: 10px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
 /*main styles*/
 
-.main{
-    flex:1;
+.main {
+    flex: 1;
     background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main .picGallery img {
+    width: clamp(125px, 70%, 600px);
+    border: solid var(--menusColor);
+}
+
+.picGallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightPic img {
+    transform: scaleX(-1);
 }
 
 /*footer styles*/
 
-footer{
+footer {
     background-color: var(--footerColor);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer p a img{
+footer p a img {
     width: 1em;
 }

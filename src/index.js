@@ -5,26 +5,31 @@ import login from './public/images/icons/login.svg';
 import gallery from './public/images/icons/gallery.svg';
 import contact from './public/images/icons/contact.svg';
 import githubIcon from './public/images/icons/github.png';
+import galleryScript from './gallery';
 
 const burguerButton = document.querySelector(".burguer");
 const burguerIcon = new Image();
 burguerIcon.src = burguerMenu;
 burguerButton.appendChild(burguerIcon);
+burguerIcon.alt = "Menu button"
 
 const loginButton = document.querySelector("#login");
 const loginIcon = new Image();
 loginIcon.src = login;
 loginButton.insertBefore(loginIcon,loginButton.children[0])
+loginIcon.alt = "login button"
 
 const galleryButton = document.querySelector("#gallery");
 const galleryIcon = new Image();
 galleryIcon.src = gallery;
 galleryButton.insertBefore(galleryIcon,galleryButton.children[0])
+galleryIcon.alt = "gallery button"
 
 const contactButton = document.querySelector("#contact");
 const contactIcon = new Image();
 contactIcon.src = contact;
 contactButton.insertBefore(contactIcon,contactButton.children[0])
+contactIcon.alt = "contact button"
 
 const footerLink = document.querySelector('footer a');
 const githubImage = new Image();
@@ -33,6 +38,7 @@ footerLink.appendChild(githubImage)
 
 const menu = document.querySelector(".menu")
 
+galleryScript()
 
 burguerButton.addEventListener('click',()=>{
     if(menu.classList.contains('visible')){
