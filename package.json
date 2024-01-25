@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "preview": "git subtree push --prefix dist origin gh-pages"
+  },
   "devDependencies": {
     "css-loader": "^6.9.1",
     "eslint": "^8.56.0",
