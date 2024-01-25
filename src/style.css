@@ -81,6 +81,13 @@ img {
     border: solid var(--menusColor);
 }
 
+.main button{
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
 .picGallery{
     display: flex;
     align-items: center;
